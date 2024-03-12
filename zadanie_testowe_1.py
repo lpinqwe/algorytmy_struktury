@@ -2,6 +2,8 @@
 def read_std_in():
     buf = input().strip()
     buf=buf.split(" ")
+    buf = [int(elem) for elem in buf]
+
     return buf
 
 def reverce_arr(arr):
@@ -16,6 +18,9 @@ def palindome_check(arr):
         if(arr[len_arr-1-i]!=arr[i]):
             return 0
     return 1
+
+
+
 if __name__ == '__main__':
 
     arr=read_std_in()
